@@ -5,8 +5,16 @@
  */
 exports.sumOfAMultiple = function( n ) {
   var sum = 0;
-
+    for (var i = 0; i < n; i++) {
+      if ((i%3 === 0) || (i%5 === 0)) {
+        sum = sum + i;
+        //console.log('add i',i);
+      }
+    }
   // do your work here
-
+  console.log('sum of 3 or 5 multiply: sum = ', sum);
   return sum;
 };
+
+// sumOfAMultiple(10);
+
